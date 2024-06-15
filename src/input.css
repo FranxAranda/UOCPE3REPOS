@@ -1,0 +1,60 @@
+/* input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Styles */
+body {
+  @apply font-sans text-gray-800; 
+}
+
+h1, h2 {
+  @apply font-bold;
+}
+
+/* Header Styles */
+.header {
+  @apply bg-white py-4;
+}
+
+.nav ul {
+  @apply flex space-x-4;
+}
+
+.nav a {
+  @apply text-gray-800 hover:text-blue-500;
+}
+
+/* Participant Grid Styles */
+.participants-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.participant {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.participant img {
+  @apply w-full h-48 object-cover rounded-t-lg mb-4;
+}
+
+.participant h2 {
+  @apply text-xl font-bold mb-2;
+}
+
+.participant p {
+  @apply text-gray-700;
+}
+
+/* Footer Styles */
+.footer {
+  @apply bg-gray-200 py-4 mt-8;
+}
+
+.social-media {
+  @apply flex space-x-4;
+}
+
+.social-media img {
+  @apply w-6 h-6;
+}
